@@ -1,7 +1,8 @@
 import { faker } from '@faker-js/faker';
 
-
+let seed = Math.floor(Math.random() * 100000);
 function createPerson(){
+    seed = Math.floor(Math.random() * 100000);
     return {
         _id: faker.datatype.uuid(),
         avatar: faker.image.avatar(),
