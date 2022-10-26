@@ -1,8 +1,8 @@
 import { faker } from '@faker-js/faker';
 
-let seed = Math.floor(Math.random() * 1000000);
+let seed = faker.datatype.number();
 function createPerson(){
-    seed = Math.floor(Math.random() * 1000000);
+    seed = faker.datatype.number();
     faker.seed(seed);
     return {
         _id: faker.datatype.uuid(),
